@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*"],
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "module": "es2015",
+    "types": ["svelte", "node", "@sapper"],
+    "typeRoots": ["typings"],
+    "paths": {
+      "@posts": ["src/posts/index.ts"],
+      "@tstips": ["src/tstips/index.ts"],
+      "@components/*": ["src/components/*"],
+      "*": ["node_modules/*"]
+    }
+  }
+}
