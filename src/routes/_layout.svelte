@@ -1,20 +1,12 @@
-<script lang="typescript">
-  import Nav from '@components/Nav.svelte'
-  export let segment
+<script lang="ts">
+  import Header from '../components/Header.svelte';
+  import Footer from '../components/Footer.svelte';
+  import GlobalStyle from "../components/GlobalStyle.svelte";
 </script>
 
-<style>
-  main {
-    position: relative;
-    max-width: 56em;
-    padding: 2em;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-</style>
-
-<Nav {segment} />
-
+<Header />
 <main>
-  <slot />
+  <GlobalStyle />
+  <slot></slot>
 </main>
+<Footer />

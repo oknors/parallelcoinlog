@@ -1,19 +1,8 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/*"],
+  "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
-    "allowJs": true,
-    "baseUrl": "./",
-    "moduleResolution": "node",
-    "target": "es2015",
-    "module": "es2015",
-    "types": ["svelte", "node", "@sapper"],
-    "typeRoots": ["typings"],
-    "paths": {
-      "@posts": ["src/posts/index.ts"],
-      "@tstips": ["src/tstips/index.ts"],
-      "@components/*": ["src/components/*"],
-      "*": ["node_modules/*"]
-    }
-  }
+    "lib": ["DOM", "ES2017", "WebWorker"]
+  },
+  "include": ["src/**/*", "src/node_modules/**/*"],
+  "exclude": ["node_modules/*", "__sapper__/*", "static/*"]
 }
