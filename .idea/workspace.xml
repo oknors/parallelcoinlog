@@ -13,11 +13,7 @@
       <change beforePath="$PROJECT_DIR$/cypress/plugins/index.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cypress/support/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/rollup/markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DisqusComments.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/GithubButton.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/KoFi.svelte" beforeDir="false" />
@@ -39,20 +35,16 @@
       <change beforePath="$PROJECT_DIR$/src/posts/postgis-from-aws-to-heroku.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/posts/shareable-strava-map-view.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/posts/why-blog-stack.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_error.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/_layout.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].json.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.json.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].json.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug].json.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug].svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.json.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.json.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/feed.xml.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/ts/[slug].json.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/ts/[slug].svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/ts/index.svelte" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/template.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tstips/*.md.d.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tstips/index.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tstips/s01e00.md" beforeDir="false" />
@@ -61,14 +53,10 @@
       <change beforePath="$PROJECT_DIR$/src/tstips/s01e03.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tstips/s01e04.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tstips/s01e05.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/favicon.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/logo-192.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/static/logo-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/manifest.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

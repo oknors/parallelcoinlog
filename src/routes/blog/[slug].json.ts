@@ -1,32 +1,26 @@
-import posts from '@posts'
+import { getPost } from './_posts.js';
 
-const lookup = new Map()
-posts.forEach(post => {
-  lookup.set(post.slug, JSON.stringify(post))
-})
+const lookup = new Map();
 
-export function get(req, res) {
-  const { slug } = req.params
+export function get(req, res, next) {
+  const { slug } = req.params;
+
+  if (process.env.NODE_ENV !== 'production' || !lookup.has(slug)) {
+    const post = getPost(slug);
+    lookup.set(slug, JSON.stringify(post));
+  }
 
   if (lookup.has(slug)) {
     res.writeHead(200, {
-      'Content-Type': 'application/json',
-    })
-    const post =
-      process.env.NODE_ENV === 'development'
-        ? JSON.stringify(posts.find(({ slug: postSlug }) => postSlug === slug))
-        : lookup.get(slug)
-
-    res.end(post)
+      'Content-Type': 'application/json'
+    });
+    res.end(lookup.get(slug));
   } else {
     res.writeHead(404, {
-      'Content-Type': 'application/json',
-    })
-
-    res.end(
-      JSON.stringify({
-        message: `Not found`,
-      })
-    )
+      'Content-Type': 'application/json'
+    });
+    res.end(JSON.stringify({
+      message: `Not found`
+    }));
   }
 }

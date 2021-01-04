@@ -1,74 +1,26 @@
-<script context="module">
-  import { assocPath, pathOr, append } from 'ramda'
-  export function preload({ params, query }) {
-    return this.fetch(`blog.json`)
-      .then(r => r.json())
-      .then(posts => {
-        const postsGroup = posts.reduce((acc, post) => {
-          const dt = new Date(post.date)
-          const month = dt.getMonth()
-          const year = dt.getFullYear()
-          return assocPath([year, month], append(post, pathOr([], [year, month], acc)), acc)
-        }, {})
-        return { postsGroup }
-      })
+<script context="module" lang="ts">
+  export function preload() {
+    return this.fetch(`blog.json`).then((r: { json: () => any; }) => r.json()).then((posts: { slug: string; title: string, html: any }[]) => {
+      return { posts };
+    });
   }
 </script>
 
-<script>
-  const monthNames = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
-  ]
-  export let postsGroup
+<script lang="ts">
+  export let posts: { slug: string; title: string, pubdate: string, html: any }[];
 </script>
-
-<style>
-  ul {
-    margin: 0 0 1em 0;
-    line-height: 1.5;
-  }
-  .summary {
-    padding-left: 2rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-</style>
 
 <svelte:head>
-  <title>Blog posts</title>
+  <title>ulwlu's blog</title>
+  <meta property="og:title" content="ulwlu's blog">
 </svelte:head>
-
-<h1>Most recent blog posts</h1>
-
-<ul>
-  {#each Object.keys(postsGroup) as year}
-    {#each Object.keys(postsGroup[year]).sort((a, b) => b - a) as month}
-      <h2>{year} - {monthNames[month]}</h2>
-      {#each postsGroup[year][month] as post}
-        <li>
-          <a rel="prefetch" href="blog/{post.slug}">
-            <span>{post.title}</span>
-            <p class="summary">{post.summary}</p>
-          </a>
-        </li>
-      {/each}
-    {/each}
-  {/each}
-</ul>
+<div class='blog'>
+{#each posts as post}
+  <div class='card'>
+    <div class='meta'>
+      <span class='date'>{post.pubdate}</span>
+    </div>
+    <a rel='prefetch' class='title' href='blog/{post.slug}'>{post.title}</a>
+  </div>
+{/each}
+</div>

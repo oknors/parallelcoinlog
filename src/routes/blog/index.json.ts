@@ -1,16 +1,16 @@
-import posts from '@posts'
+import { getPosts } from './_posts.js';
 
-const contents = JSON.stringify(
-  posts.map(post => ({
-    ...post,
-    date: +post.date,
-  }))
-)
+const contents = JSON.stringify(getPosts().map(post => {
+  return {
+    slug: post.slug,
+    title: post.title,
+    pubdate: post.pubdate,
+  };
+}));
 
 export function get(req, res) {
   res.writeHead(200, {
-    'Content-Type': 'application/json',
-  })
-
-  res.end(contents)
+    'Content-Type': 'application/json'
+  });
+  res.end(contents);
 }
