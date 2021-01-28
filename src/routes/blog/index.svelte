@@ -1,18 +1,17 @@
-<script context="module" lang="ts">
-  export function preload() {
-    return this.fetch(`blog.json`).then((r: { json: () => any; }) => r.json()).then((posts: { slug: string; title: string, html: any }[]) => {
+<script context="module">
+  export async function preload() {
+    let posts =  await this.fetch(`https://api.okno.rs/data/log/posts`).then(res => res.json())
       return { posts };
-    });
   }
 </script>
 
-<script lang="ts">
-  export let posts: { slug: string; title: string, pubdate: string, html: any }[];
+<script>
+  export let posts;
 </script>
 
 <svelte:head>
   <title>ulwlu's blog</title>
-  <meta property="og:title" content="ulwlu's blog">
+  <meta property="og:title" content="ParallelCoin's blog">
 </svelte:head>
 <div class='blog'>
 {#each posts as post}
@@ -20,7 +19,7 @@
     <div class='meta'>
       <span class='date'>{post.pubdate}</span>
     </div>
-    <a rel='prefetch' class='title' href='blog/{post.slug}'>{post.title}</a>
+    <a rel='prefetch' class='title' href='blog/{post.Slug}'>{post.Title}</a>
   </div>
 {/each}
 </div>

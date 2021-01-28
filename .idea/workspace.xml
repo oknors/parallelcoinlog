@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2553447-19bb-4cdd-95f5-c085b4e70c69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.envrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nvmrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/__sapper__/dev/client/shimport@1.0.1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/fixtures/example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/integration/spec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/plugins/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/commands.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cypress/support/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rollup/markdown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DisqusComments.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GithubButton.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/KoFi.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LinkedinBadge.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tag.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/posts.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/*.md.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/cra-to-next-p1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/cra-to-next-p2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/dynamic-og-meta-tags-puppeteer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/dynamic-og-puppeteer-v2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/geekle-node-conference-day1.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/geekle-node-conference-day2.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/how-blog-tech.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/how-puppeteer-fast-runner.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/postgis-from-aws-to-heroku.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/shareable-strava-map-view.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/posts/why-blog-stack.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].json.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug].json.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rollup.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/rollup.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GlobalStyle.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GlobalStyle.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].json.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug].json.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/[slug].svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/[slug].svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.json.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.json.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/_posts.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/index.json.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/index.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/feed.xml.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/ts/[slug].json.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/ts/[slug].svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/ts/index.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/service-worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/*.md.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/s01e00.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/s01e01.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/s01e02.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/s01e03.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/s01e04.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tstips/s01e05.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/global.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/logo-192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/logo-512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/svelte.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,9 +35,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../parallelcoinstatus" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../admin" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">

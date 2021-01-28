@@ -4,7 +4,7 @@
   @tailwind utilities;
 
   body {
-    @apply text-sm sm:text-lg leading-normal break-all;
+    @apply text-sm sm:text-lg leading-normal;
     background: theme('colors.light.bg');
     color: theme('colors.light.fg');
     .dark & {

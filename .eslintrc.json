@@ -37,7 +37,7 @@
   "overrides": [
     {
       "files": [
-        "*.ts"
+        "*.js"
       ],
       "parser": "@typescript-eslint/parser",
       "extends": [

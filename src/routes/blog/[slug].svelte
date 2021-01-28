@@ -1,6 +1,6 @@
-<script context="module" lang="ts">
+<script context="module">
   export async function preload({ params }) {
-    const res = await this.fetch(`blog/${params.slug}.json`);
+    const res = await this.fetch(`https://api.okno.rs/data/log/posts/${params.slug}`);
     const data = await res.json();
     if (res.status === 200) {
       return { post: data };
@@ -10,20 +10,20 @@
   }
 </script>
 
-<script lang="ts">
-  export let post: { slug: string; title: string, pubdate: string, html: any };
+<script>
+  export let post;
 </script>
 
 <svelte:head>
-  <title>{post.title}</title>
-  <meta property="og:title" content="{post.title}">
+  <title>{post.Title}</title>
+  <meta property="og:title" content="{post.Title}">
 </svelte:head>
 <div class='title'>
-  <h1>{post.title}</h1>
+  <h1>{post.Title}</h1>
 </div>
 <div class='content'>
-  {@html post.html}
+  {@html post.Content}
 </div>
 <div class='meta'>
-  <p class='date'>{post.pubdate}</p>
+  <p class='date'>{post.CreatedAt}</p>
 </div>

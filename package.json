@@ -8,7 +8,7 @@
     "url": "https://github.com/ulwlu/blog.git"
   },
   "scripts": {
-    "lint": "eslint . --ext .ts,.svelte --fix",
+    "lint": "eslint . --ext .js,.svelte --fix",
     "serve": "sapper dev",
     "build": "sapper build",
     "export": "sapper export",
@@ -67,7 +67,6 @@
     "svelte-check": "^1.0.46",
     "svelte-preprocess": "^4.6.1",
     "tailwindcss": "^2.0.2",
-    "tslib": "^2.0.1",
-    "typescript": "^4.0.3"
+    "tslib": "^2.0.1"
   }
 }

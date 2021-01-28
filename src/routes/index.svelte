@@ -5,7 +5,7 @@
 </svelte:head>
 
 <div id="profile-wrapper">
-  <h2>Plan 9 from Crypto-space</h2>
+  <h2>Plan 9 from Crypto-Space</h2>
 </div>
 
 
