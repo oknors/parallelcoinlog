@@ -1,6 +1,6 @@
 <script context="module">
   export async function preload({ params }) {
-    const res = await this.fetch(`https://api.okno.rs/data/log/posts/${params.slug}`);
+    const res = await this.fetch(`https://api.okno.rs/data/log_parallelcoin_info/posts/${params.slug}`);
     const data = await res.json();
     if (res.status === 200) {
       return { post: data };
@@ -9,6 +9,7 @@
     }
   }
 </script>
+
 
 <script>
   export let post;
@@ -25,5 +26,5 @@
   {@html post.Content}
 </div>
 <div class='meta'>
-  <p class='date'>{post.CreatedAt}</p>
+  <p class='date'>{post.Date}</p>
 </div>

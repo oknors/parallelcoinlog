@@ -1,1 +1,2 @@
-# parallelcoinlog
+# ParallelCoin's log
+

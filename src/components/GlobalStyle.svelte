@@ -4,7 +4,7 @@
   @tailwind utilities;
 
   body {
-    @apply text-sm sm:text-lg leading-normal;
+    @apply text-sm sm:text-lg leading-normal break-all;
     background: theme('colors.light.bg');
     color: theme('colors.light.fg');
     .dark & {
@@ -39,6 +39,10 @@
 
   a {
     @apply underline;
+  }
+
+  pre {
+    @apply whitespace-pre-wrap;
   }
 
   .blog {
@@ -88,6 +92,9 @@
     @apply text-center mt-16;
     button {
       @apply border-b border-solid leading-none opacity-50 absolute -right-0;
+      &:focus {
+        @apply outline-none;
+      }
     }
   }
 
@@ -104,4 +111,10 @@
       }
     }
   }
+
+
+
+
+
+
 </style>
