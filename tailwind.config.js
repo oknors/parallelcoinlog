@@ -30,6 +30,8 @@ module.exports = {
     extend: {},
   },
   variants: {
+    boxShadow: ['hover', 'active'],
+    translate: ['hover', 'active'],
     extend: {
       tableLayout: ['hover', 'focus'],
     },

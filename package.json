@@ -1,11 +1,11 @@
 {
-  "name": "ulwlu-blog",
-  "description": "ulwlu's blog",
+  "name": "ParallelCoin log",
+  "description": "Plan 9 from Crupto-Space's log",
   "license": "MIT",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ulwlu/blog.git"
+    "url": "https://github.com/oknors/parallelcoinlog.git"
   },
   "scripts": {
     "lint": "eslint . --ext .ts,.svelte --fix",

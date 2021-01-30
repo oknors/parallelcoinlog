@@ -12,6 +12,8 @@
 
 
 <script>
+  import Title from '../components/Title.svelte';
+
   export let post;
 </script>
 
@@ -20,7 +22,7 @@
   <meta property="og:title" content="{post.Title}">
 </svelte:head>
 <div class='title'>
-  <h1>{post.Title}</h1>
+  <Title title="{post.Title}"></Title>
 </div>
 <div class='content'>
   {@html post.Content}

@@ -3,14 +3,53 @@
   @tailwind components;
   @tailwind utilities;
 
+  @font-face {
+      font-family: 'bariollight';
+      src: url('https://s.okno.rs/font/bariol/bariol-light-webfont.woff2') format('woff2'),
+      url('https://s.okno.rs/font/bariol/bariol-light-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'bariolregular';
+      src: url('https://s.okno.rs/font/bariol/bariol-regular-webfont.woff2') format('woff2'),
+      url('https://s.okno.rs/font/bariol/bariol-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'bariolbold';
+      src: url('https://s.okno.rs/font/bariol/bariol-bold-webfont.woff2') format('woff2'),
+      url('https://s.okno.rs/font/bariol/bariol-bold-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+  }
+  @font-face {
+      font-family: 'plan9regular';
+      font-style: normal;
+      font-display: swap;
+      font-weight: 400;
+      src:
+              local('plan9regular '),
+              local('plan9regular'),
+              url('https://s.okno.rs/font/plan9/plan9.woff2') format('woff2'),
+              url('https://s.okno.rs/font/plan9/plan9.woff') format('woff');
+  }
+
   body {
-    @apply text-sm sm:text-lg leading-normal break-all;
+      font-family: 'bariolregular';
+    @apply text-sm sm:text-lg leading-normal;
     background: theme('colors.light.bg');
     color: theme('colors.light.fg');
     .dark & {
       background: theme('colors.dark.bg');
       color: theme('colors.dark.fg');
     }
+  }
+
+  h1,h2, h3, h4, h5, h6 {
+      font-family: 'plan9regular';
+      margin: 0;
   }
 
   h1,
@@ -111,10 +150,6 @@
       }
     }
   }
-
-
-
-
 
 
 </style>
